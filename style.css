@@ -1,5 +1,31 @@
 @charset "UTF-8";
 
 body {
-    background-color: #374151;
+    color: white;
+    /* Card cartão */
+
+
+    box-sizing: border-box;
+
+    /* Auto layout */
+
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 32px;
+    gap: 48px;
+
+    position: absolute;
+    width: 736px;
+    height: 420px;
+    left: 352px;
+    top: 160px;
+
+    /* neutral colors/gray-800 */
+
+    background: #1F2937;
+    /* neutral colors/gray-700 */
+
+    border: 1px solid #374151;
+    border-radius: 8px;
 }
