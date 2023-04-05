@@ -9,52 +9,67 @@
 </head>
 <body>
     <section>
-        <div>
-            <p>Núumero do cartão</p>
-            <input 
-                type="text" 
-                name="numcar" 
-                id="numcar"
-                placeholder="**** **** **** ****"
-                oninput='this.value = this.value.replace(/\D/g,"").replace(/(\d{4})/g, "$1 ").replace(/\ $/, "").substring(0, 19);'
-            />
-            <br>
+        <div class="principal">
+            <div class="principal2">
+                <div class="formulario">
+                    <div class="grupoinput">
+                        <p>Núumero do cartão</p>
+                        <input 
+                            type="text" 
+                            name="numcar" 
+                            id="numcar"
+                            placeholder="**** **** **** ****"
+                            oninput='this.value = this.value.replace(/\D/g,"").replace(/(\d{4})/g, "$1 ").replace(/\ $/, "").substring(0, 19);'
+                        />
+                    </div>
+                    <div class="grupoinput">
+                        <p>Nome do titular</p>
+                        <input
+                            type="text" 
+                            name="nomedotitular"
+                            id="nomedotitular"
+                            placeholder="Nome como está no cartão"
+                        />
+                    </div>
 
-            <p>Nome do titular</p>
-            <input
-                type="text" 
-                name="nomedotitular"
-                id="nomedotitular"
-                placeholder="Nome como está no cartão"
-            />
-            <br>
+                    <div class="grupo">
+                        <p>Validade</p>
+                        <input 
+                            type="text" 
+                            name="validade" 
+                            id="validade"
+                            placeholder="mm/aa"
+                            oninput='this.value = this.value.replace(/\D/g,"").replace(/(\d{2})/g, "$1/").replace(/\/$/, "").substring(0, 5);'
+                        />
+                    </div>
+                    <div class="grupo">
+                        <p>CVV</p>
+                        <input 
+                            type="text" 
+                            name="cvvcar" 
+                            id="cvvcar"
+                            placeholder="***"
+                            oninput='this.value = this.value.replace(/\D/g,"").substring(0, 3);'
+                        />
+                    </div>
 
-            <p>Validade</p>
-            <input 
-                type="text" 
-                name="validade" 
-                id="validade"
-                placeholder="mm/aa"
-                oninput='this.value = this.value.replace(/\D/g,"").replace(/(\d{2})/g, "$1/").replace(/\/$/, "").substring(0, 5);'
-            />
-                
-            <br>
+                </div>
 
-            <p>CVV</p>
-            <input 
-                type="text" 
-                name="cvvcar" 
-                id="cvvcar"
-                placeholder="***"
-                oninput='this.value = this.value.replace(/\D/g,"").substring(0, 3);'
-            />
+                <div class="cartao">
+                    <div class="imgcartao">
+                        <img src="Credit card.png" alt="imgcartao">
+                    </div>
+                </div>
 
-            <br>
-            <br>
+                <div class="informacao">  
+                        <p>Seus dados estão seguros</p>
+                </div>
+            </div>
 
-            <p>Seus dados estão seguros</p>
+                <div class="botao">
+                    <input type="button" value="Adicionar cartão" onclick="Adicionarcartão()">
+                </div>
 
-            <input type="button" value="Adicionar cartão" onclick="Adicionarcartão()">
         </div>
     </section>
     <script src="script-unico"></script>

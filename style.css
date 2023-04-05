@@ -1,31 +1,30 @@
 @charset "UTF-8";
 
 body {
-    color: white;
-    /* Card cartão */
-
-
-    box-sizing: border-box;
-
-    /* Auto layout */
-
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    padding: 32px;
-    gap: 48px;
-
-    position: absolute;
-    width: 736px;
-    height: 420px;
-    left: 352px;
-    top: 160px;
-
     /* neutral colors/gray-800 */
 
     background: #1F2937;
-    /* neutral colors/gray-700 */
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    height: 100vh;
+}
 
-    border: 1px solid #374151;
-    border-radius: 8px;
+.principal {
+    background-color:#374151;
+    height:420px;
+    width:736px;
+    border-radius:8px;
+    padding:32px;
+    display:flex;
+    flex-direction:column;
+}
+
+.imgcartao {
+    position: absolute;
+    left: calc(62% - 280px/2);
+    top: calc(40% - 168px/2);
 }
