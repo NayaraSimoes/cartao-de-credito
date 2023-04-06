@@ -8,7 +8,6 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <section>
         <div class="principal">
             <div class="principal2">
                 <div class="formulario">
@@ -33,24 +32,26 @@
                     </div>
 
                     <div class="grupo">
-                        <p>Validade</p>
-                        <input 
-                            type="text" 
-                            name="validade" 
-                            id="validade"
-                            placeholder="mm/aa"
-                            oninput='this.value = this.value.replace(/\D/g,"").replace(/(\d{2})/g, "$1/").replace(/\/$/, "").substring(0, 5);'
-                        />
-                    </div>
-                    <div class="grupo">
-                        <p>CVV</p>
-                        <input 
-                            type="text" 
-                            name="cvvcar" 
-                            id="cvvcar"
-                            placeholder="***"
-                            oninput='this.value = this.value.replace(/\D/g,"").substring(0, 3);'
-                        />
+                        <div class="grupoinput">
+                            <p>Validade</p>
+                            <input 
+                                type="text" 
+                                name="validade" 
+                                id="validade"
+                                placeholder="mm/aa"
+                                oninput='this.value = this.value.replace(/\D/g,"").replace(/(\d{2})/g, "$1/").replace(/\/$/, "").substring(0, 5);'
+                            />
+                        </div>
+                        <div class="grupoinput">
+                            <p>CVV <img src="Question.png" alt=""></p>
+                            <input 
+                                type="text" 
+                                name="cvvcar" 
+                                id="cvvcar"
+                                placeholder="***"
+                                oninput='this.value = this.value.replace(/\D/g,"").substring(0, 3);'
+                            />
+                        </div>
                     </div>
 
                 </div>
@@ -59,19 +60,20 @@
                     <div class="imgcartao">
                         <img src="Credit card.png" alt="imgcartao">
                     </div>
-                </div>
-
-                <div class="informacao">  
-                        <p>Seus dados estão seguros</p>
+                    
+                    <div class="informacao">  
+                        <p>  <img class="icon-seguranca" src="verificar.png" alt="iconcartao"> Seus dados estão seguros</p>
+                    </div>
                 </div>
             </div>
-
-                <div class="botao">
-                    <input type="button" value="Adicionar cartão" onclick="Adicionarcartão()">
-                </div>
+            <div class="botao">
+                <input class="adicionarcard"
+                type="button" 
+                value="Adicionar cartão" 
+                onclick="Adicionarcartão()">
+            </div>
 
         </div>
-    </section>
     <script src="script-unico"></script>
 </body>
 </html>
